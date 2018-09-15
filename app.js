@@ -27,6 +27,7 @@ app.post('/', urlencodedParser, (req,res) => {
     	var filename = null;
     	var filetype = null;
     	var file = null;
+        console.log(length);
     	if (length > 1) {
     		for (var i = 0; i < length; i++) {
     			file = req.files.filename[i];
